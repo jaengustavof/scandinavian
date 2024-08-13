@@ -27,7 +27,7 @@ export const stepFour = ({ parentContainer }) => {
                         </div>
                     </div>
                     <div class="step-four__confirmation-container">
-                        <img src="/assets/images/check.svg" alt="Booking Confirmation icon">
+                        <img src="./assets/images/check.svg" alt="Booking Confirmation icon">
                     </div>
                     <div class="step-four__text-container">
                         <div class="text-sklt"></div>

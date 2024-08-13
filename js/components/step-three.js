@@ -7,7 +7,7 @@ export const stepThree = ({ parentContainer }) => {
         <div class="step-three">
             <div class="step-three__waiver">
                 <div class="waiver-image-container">
-                    <img src="/assets/images/Image.svg" alt="waiver image" class="waiver-image-container__image">
+                    <img src="./assets/images/Image.svg" alt="waiver image" class="waiver-image-container__image">
                 </div>
                 <div class="waiver-text-container">
                     <h4 class="waiver-text-container__heading">Liability Waiver</h4>
@@ -26,7 +26,7 @@ export const stepThree = ({ parentContainer }) => {
             </div>
             <div class="step-three__content">
                 <div class="content-image">
-                    <img src="/assets/images/Wifi.svg" alt="wifi image" class="content-image__image">
+                    <img src="./assets/images/Wifi.svg" alt="wifi image" class="content-image__image">
                 </div>
                 <div class="content-info">
                     <h3 class="content-info__title">Wifi</h3>
