@@ -1,0 +1,103 @@
+.step-one {
+    width: 50.4rem;
+    height: 36.7rem;
+    background-color: $white;
+    border-radius: 0.6rem;
+    padding-top: 3rem;
+    @include flex (row, nowrap, center, center);
+    gap: 1.2rem;
+    &__date {
+        width: 18.6rem;
+        height: 24.4rem;
+        border: 3px solid $primary-color;
+        border-radius: 0.6rem;
+        padding: 2.6rem 2.3rem 2.6rem 2.6rem;
+        .date-container {
+            @include flex (row, nowrap, flex-start, center);
+            gap: 0.9rem;
+            font-family: $secondary-font-family;
+            margin-bottom: 1rem;
+            .date-number {
+                @include text-style($black, 6rem, 7.3rem, 700);
+            }
+            .date-text {
+                font-size: 2rem;
+                line-height: 2.44rem;
+                font-weight: 500;
+            }
+        }
+        &.initial {
+            background: $linear-gradient;
+            border: none;
+            color: $white;
+            box-shadow: $box-shadow;
+            .date-number {
+                color: $white;
+            }
+            .sklt-one, .sklt-two {
+                .second-bar {
+                    background-color: $light-blue;
+                    opacity: 0.6;
+                }
+            }
+        }
+        .sklt-one {
+            width: 10rem;
+            margin-bottom: 2.8rem;
+            .first-bar {
+                width: 8.6rem;
+                height: 1.4rem;
+                background-color: $light-blue;
+                border-radius: 0.6rem;
+                opacity: 0.6;
+                margin-bottom: 0.6rem;
+            }
+            .second-bar {
+                width: 10rem;
+                height: 2.1rem;
+                background-color: $light-gray;
+                border-radius: 0.6rem;
+                opacity: 1;
+            }
+        }
+        .sklt-two {
+            width: 10rem;
+            height: 2.1rem;
+            margin-bottom: 2.8rem;
+            .first-bar {
+                width: 8.6rem;
+                height: 1.4rem;
+                background-color: $light-blue;
+                border-radius: 0.6rem;
+                opacity: 0.6;
+                margin-bottom: 0.6rem;
+            }
+            .second-bar {
+                width: 13.6rem;
+                height: 2.1rem;
+                background-color: $light-gray;
+                border-radius: 0.6rem;
+                opacity: 1;
+            }
+        }
+        &.ending {
+            position: relative;
+            .total-days {
+                color: $white;
+                background-color: $black;
+                padding: 1rem 1.3rem;
+                position: absolute;
+                border-radius: 0.6rem 0.6rem 0.6rem 0;
+                transform: translate(-50%, -50%);
+                top: 0;
+                right: -50%;
+            }
+        }
+    }
+    &__arrow {
+        &::before {
+            content: url('/assets/images/arrow.svg');
+
+        }
+    }
+}

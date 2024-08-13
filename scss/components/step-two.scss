@@ -1,0 +1,76 @@
+.step-two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1.09rem;
+    row-gap: 0.8rem;
+    position: relative;
+    .fleet-card {
+        width: 15.66rem;
+        height: 20.7rem;
+        border-radius: 6px;
+        background: $linear-gradient;
+        margin-top: -1.8rem;
+        @include flex (column, nowrap, center, center);
+        &__name {
+            @include text-style($white, 2rem, 1.84rem, 700);
+            margin-bottom: 1rem;
+
+        }
+        &__sklt-one {
+            width: 8.13rem;
+            height: 1.845rem;
+            background-color: $lighter-gray;
+            border-radius: 3px;
+            margin-bottom: 0.799rem;
+        }
+        &__sklt-two {
+            width: 9.883rem;
+            height: 0.879rem;
+            background-color: $light-gray;
+            margin-bottom: 0.986rem;
+        }
+        &__button {
+            width: 13.658rem;
+            height: 2.177rem;
+            border-radius: 2rem;
+            padding: 0.5rem 0 0.357rem 0;
+            background-color: $white;
+            @include flex (row, nowrap, center, center);
+            @include text-style($primary-color, 1.12rem, 1.051rem, 700);
+
+        }
+        &.sklt {
+            margin-top: 0;
+            background: $white;
+            .fleet-card__name {
+                width: 10.59rem;
+                height: 1.8rem;
+                background-color: $lighter-gray;
+                border-radius: 3px;
+                margin-bottom: 1rem;
+            }
+            .fleet-card__image {
+                width: 10.44rem;
+                height: 7.42rem;
+                background-color: $light-gray;
+                margin-bottom: 0.973rem;
+            }
+            .fleet-card__button {
+                background-color: $primary-color;
+                opacity: 0.2;
+            }
+        }
+    }
+    .featured-message {
+        top: 26.2rem;
+        right: 10%;
+        &__title {
+            @include text-style($white, 5rem, 4.6rem, 700);
+        }
+        &__text {
+            text-transform: uppercase;
+            @include text-style($white, 2rem, 1.84rem, 700);
+        }
+    }
+}

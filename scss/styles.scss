@@ -1,0 +1,22 @@
+// FONTS
+@import "./fonts.scss";
+
+// VARIBLES
+@import "./variables.scss";
+
+// BASE
+@import "./base.scss";
+
+// APP
+@import "./app.scss";
+
+// Mixins
+@import "./mixins.scss";
+
+// Components
+@import "./components/section-conainer.scss";
+@import "./components/step-one.scss";   
+@import "./components/step-two.scss"; 
+@import "./components/step-three.scss";
+@import "./components/step-four.scss";
+@import "./components/featured.scss";

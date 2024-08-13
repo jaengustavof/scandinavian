@@ -1,0 +1,41 @@
+@import './mixins.scss';
+
+.app-container {
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    @include flex (row, nowrap, center, center);
+    .booking-process {
+      width: 100%;
+      max-width: 115.3rem;
+      height: 100%;
+      max-height: 57.9rem;
+      @include flex (row, nowrap, space-between, center);
+      gap: 4rem;
+      &__info {
+        width: 100%;
+        max-width: 60.8rem;
+        height: 100%;
+        max-height: 56.6rem;
+        background-color: $info-white;
+        border-radius: 6px;
+        @include flex (row, nowrap, center, center);
+      }
+      &__steps {
+        width: 100%;
+        max-width: 49.2rem;
+        height: 100%;
+        border-radius: 6px;
+        .steps-text {
+            @include text-style($primary-color, 2rem, 2rem, 600);
+            margin-bottom: 2.2rem;
+        }
+        .steps-heading {
+            margin-bottom: 2.2rem;
+        }
+      }
+      
+    }
+}
+

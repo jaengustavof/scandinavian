@@ -1,0 +1,200 @@
+.step-three {
+    width: 54.8rem;
+    height: 45.2rem;
+    @include flex (column, nowrap, flex-start, flex-start);
+    gap: 2rem;
+    position: relative;
+    &__waiver {
+        width: 39.9rem;
+        height: 12.1rem;
+        background: $linear-gradient;
+        border-radius: 0.6rem;
+        padding: 1.4rem 1.3rem 1.5rem;
+        @include flex (row, nowrap, flex-start, center);
+        gap: 2.06rem;
+        box-shadow: $box-shadow;
+        .waiver-image-container {
+            width: 13.9rem;
+            height: 9.2rem;
+            border-radius: 0.6rem;
+            position: relative;
+            overflow: hidden;
+            &__image {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+            }
+        }
+        .waiver-text-container {
+            &__heading {
+                @include text-style($white, 1.8rem, 1.656rem, 800);
+                margin-bottom: 0.58rem;
+            }
+            &__sklt-one, &__sklt-two {
+                height: 1.3rem;
+                background-color: $lighter-gray;
+                border-radius: 0.3rem;
+            }
+            &__sklt-one {
+                width: 19.847rem;
+                margin-bottom: 0.6rem;
+            }
+            &__sklt-two {
+                width: 17.763rem;
+                margin-bottom: 0.8rem;
+            }
+            &__cta {
+                width: 20.2rem;
+                height: 2.6rem;
+                background-color: $white;
+                border-radius: 2rem;
+                @include text-style($primary-color, 1.2rem, 1.465rem, 700);
+                padding: 0.55rem 0;
+                p {
+                    margin-top: 1px;
+                }
+            }
+        }
+    }
+    &__sklt-one {
+        width: 41rem;
+        height: 12.1rem;
+        background-color: $white;
+        border-radius: 0.6rem;
+        align-self: flex-end;
+        padding: 1.4rem 1.696rem 1.5rem 1.304rem;
+        @include flex (row, nowrap, flex-start, center);
+        gap: 1.708rem;
+        box-shadow: $box-shadow;
+        .sklt-image-container {
+            width: 16.242rem;
+            height: 9.151rem;
+            border-radius: 0.6rem;
+            background-color: $info-white;
+        }
+        .sklt-text-container {
+            &__heading, &__text {
+                background-color: $info-white;
+                border-radius: 0.3rem;
+            }
+            &__heading {
+                width: 16.46rem;
+                height: 2rem;
+                margin-bottom: 0.7rem;
+            }
+            &__text {
+                width: 19.951rem;
+                height: 3.1rem;
+                margin-bottom: 0.8rem;
+            }
+            &__button {
+                background-color: $lighter-blue;
+                width: 20.151rem;
+                height: 2.6rem;
+                border-radius: 0.561rem;
+            }
+        }
+    }
+    &__content {
+        width: 35rem;
+        height: 7.5rem;
+        background-color: $white;
+        border: 3px solid $primary-color;
+        border-radius: 0.6rem;
+        margin-left: 3.4rem;
+        padding: 1.1rem 1.78rem 1.55rem 0;
+        box-shadow: $box-shadow;
+        @include flex (row, nowrap, flex-start, center);
+        .content-image {
+            width: 6.5rem;
+            height: 5.4rem;
+            margin-right: 1.604rem;
+            position: relative;
+            overflow: hidden;
+            &__image {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+            }
+        }
+        .content-info {
+            @include flex (column, nowrap, flex-start, flex-start);
+            gap: 0.6rem;
+            margin-right: 2.768rem;
+            &__title {
+                @include text-style($black, 2.2rem, 2.024rem, 700);
+                margin-bottom: 0.4rem;
+            }
+            &__text {
+                width: 11.568rem;
+                height: 1.5rem;
+                border-radius: 0.6rem;
+                background-color: $light-gray;
+            }
+        }
+        .content-cta {
+            width: 10.6rem;
+            height: 4.4rem;
+            border-radius: 2rem;
+            background: $linear-gradient;
+            @include text-style($white, 1.6rem, normal, 700);
+        }
+    }
+    &__sklt-two {
+        width: 35rem;
+        height: 7.5rem;
+        background-color: $white;
+        border-radius: 0 0.6rem 0.6rem 0;
+        align-self: flex-end;
+        margin-right: 3rem;
+        box-shadow: $box-shadow;
+        @include flex (row, nowrap, flex-start, center);
+        .sklt-two-image {
+            width: 5.684rem;
+            height: 4.4rem;
+            border-radius: 0 0.6rem 0.6rem 0;
+            background-color: $info-white;
+            margin-right: 2.692rem;
+        }
+        .sklt-two-info {
+            @include flex (column, nowrap, flex-start, flex-start);
+            gap: 0.6rem;
+            margin-right: 1.695rem;
+            &__title {
+                width: 6.88rem;
+                height: 1.9rem;
+                border-radius: 0.6rem;
+                background-color: $light-gray;
+            }
+            &__text {
+                width: 11.568rem;
+                height: 1.5rem;
+                border-radius: 0.6rem;
+                background-color: $light-gray;
+            }
+        }
+        .sklt-two-cta {
+            width: 10.57rem;
+            height: 4.4rem;
+            border-radius: 0.6rem;
+            background-color: $lighter-blue;
+        }
+    }
+    .featured-message {
+        top: 9.8rem;
+        left: 32.1rem;
+        &__title {
+            @include text-style($white, 4rem, 3.68rem, 700);
+        }
+        &__text {
+            text-transform: uppercase;
+            @include text-style($white, 1.6rem, 1.472rem, 700);
+        }
+    }
+}

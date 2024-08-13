@@ -1,0 +1,15 @@
+//General Mixins
+@mixin flex($direction, $wrap, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+} //@include flex (row, wrap, space-around, center);
+
+@mixin text-style($color, $size, $height, $weight) {
+    color: $color;
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+} //@include text-style($medium-grey, 20px, 26px, 400);

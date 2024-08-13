@@ -1,0 +1,47 @@
+.step-four {
+    width: 49.6rem;
+    height: 45rem;
+    border-radius: 4rem;
+    box-shadow: $box-shadow-last;
+    background-color: $white;
+    padding: 3.675rem 4.8rem 5.3rem;
+    @include flex (column, nowrap, flex-start, center);
+    &__booking-steps {
+        width: 40rem;
+        height: 7.55rem;
+        border-bottom: 1px solid $gray;
+        padding-bottom: 3.55rem;
+        @include flex (row, nowrap, space-between, center);
+        .step-number-container {
+            @include flex(row, nowrap, center, center);
+            .step-number {
+                width: 4rem;
+                height: 4rem;
+                background: $linear-gradient;
+                border-radius: 50%;
+                @include flex(row, nowrap, center, center);
+                @include text-style($info-white, 2rem, 2rem, 600);
+            }
+        }
+        .split-line {
+            width: 6.712rem;
+            height: 0.446rem;
+            background-color: $lignt-gray;
+            border-radius: 4rem;
+        }
+    }
+    &__confirmation-container {
+        padding: 2.341rem 0 3.354rem;
+        @include flex (column, nowrap, center, center);
+    }
+    &__text-container {
+        @include flex (column, nowrap, center, center);
+        gap: 1.4rem;
+        .text-sklt {
+            width: 34.8rem;
+            height: 4.6rem;
+            border-radius: 0.6rem;
+            background-color: $light-gray;
+        }
+    }
+}
