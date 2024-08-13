@@ -1,2 +1,2 @@
-# scandinavia
+
 # scandinavian
